@@ -26,14 +26,8 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.carousel-image {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.carousel-image.fade {
-  opacity: 0;
-}
-
-.carousel-image.fade.active {
-  opacity: 1;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
